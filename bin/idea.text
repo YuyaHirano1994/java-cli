@@ -1,0 +1,43 @@
+school Menu
+-admin menu(optional)
+-teacher login
+-student login
+-exit system
+
+Teacher menu
+-show my class (show registered class and students) key: teacher id
+-register class (move Register class Menu)
+-register students grades
+-delete class (option)
+-log out (back to school Menu)
+
+Register class menu
+-register student -> ask classNumber -> how many? -> (register student)
+-show students -> ask classNumber (show registered students)
+-delete student (option)
+-back (back to Teacher Menu)
+
+Student menu
+-show my grades
+-show my teacher
+-show my classes
+-log out (back to school Menu)
+
+=============================================================================
+
+Teacher class
+-id integer :key
+-password string
+-name string
+-subject string 
+-classNumber integer
+
+Student class
+-studentID integer :key
+-password integer
+-classNumber integer :key
+-firstName string
+-lastName string
+
+
+
