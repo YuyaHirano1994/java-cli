@@ -8,11 +8,11 @@ public class Main {
   public static void main(String[] args) {
 
     // assumption that a user has already been created
-    // create teacher arraylist
     Teacher EnglishListening = new Teacher(1, "1", "Francois", "Polo", 100);
     Teacher EnglishGrammar = new Teacher(2, "password2", "Mina", "Ansari", 101);
     Teacher EnglishSpeaking = new Teacher(3, "password3", "Gizem", "Phece", 102);
 
+    // create teacher arraylist
     ArrayList<Teacher> teacherList = new ArrayList<>();
 
     teacherList.add(EnglishListening);
@@ -95,7 +95,7 @@ public class Main {
           Teacher currentTeacher = Teacher.checkUser(user, pass, teacherList);
           clrscr();
 
-          currentTeacher.showTeacherMenu(teacherList, studentList); // focus on login teacher class
+          currentTeacher.showTeacherMenu(teacherList, studentList); // Focus on the teacher who are logged in
         } catch (Exception e) {
           System.out.println("Incorrect ID or Password");
           System.out.println("DO you want to try again?");
@@ -135,7 +135,7 @@ public class Main {
           Student currentStudent = Student.checkUser(user, pass, studentList);
           clrscr();
 
-          currentStudent.showStudentMenu(teacherList, studentList);
+          currentStudent.showStudentMenu(teacherList, studentList); // Focus on the student who are logged in
         } catch (Exception e) {
           System.out.println("Incorrect ID or Password");
           System.out.println("DO you want to try again?");

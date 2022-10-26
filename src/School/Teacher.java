@@ -54,13 +54,6 @@ public class Teacher {
     return null;
   }
 
-  // Return the teacher full name
-  static void displayTeacherFullName(ArrayList<Teacher> teacherList) {
-    for (Teacher teacher : teacherList) {
-      System.out.println(teacher.getFirstName() + " " + teacher.getLastName());
-    }
-  }
-
   void showTeacherMenu(ArrayList<Teacher> teacherList, ArrayList<Student> studentList) {
     char option;
     try (Scanner input1 = new Scanner(System.in)) {
@@ -187,7 +180,7 @@ public class Teacher {
             ++count; // if this student has already reg, count up
           }
         }
-        if (count == 0) { // this student hasn't reg , it could be reg
+        if (count == 0) { // this student hasn't reg , it would be reg
           System.out
               .println(
                   check + "ID:" + student.getStudentId() + " : " + student.getFirstName() + " " + student.getLastName()
