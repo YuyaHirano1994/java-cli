@@ -289,7 +289,7 @@ public class Teacher {
           grade = "F";
         }
         student.setFinalGrade(grade);
-        System.out.println("=====Delete succeeded.=====");
+        System.out.println("=================================================");
         System.out.println(student.getFirstName() + " " + student.getLastName());
         System.out.println("Grade: " + student.getFinalGrade() + " (" + student.getFinalScore() + ")");
         break;
