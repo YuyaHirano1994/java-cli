@@ -8,16 +8,16 @@ public class Main {
   public static void main(String[] args) {
 
     // assumption that a user has already been created
-    Teacher EnglishListening = new Teacher(1, "1", "Francois", "Polo", 100);
-    Teacher EnglishGrammar = new Teacher(2, "password2", "Mina", "Ansari", 101);
-    Teacher EnglishSpeaking = new Teacher(3, "password3", "Gizem", "Phece", 102);
+    Teacher Teacher1 = new Teacher(1, "1", "Francois", "Polo", 100);
+    Teacher Teacher2 = new Teacher(2, "password2", "Mina", "Ansari", 101);
+    Teacher Teacher3 = new Teacher(3, "password3", "Gizem", "Phece", 102);
 
     // create teacher arraylist
     ArrayList<Teacher> teacherList = new ArrayList<>();
 
-    teacherList.add(EnglishListening);
-    teacherList.add(EnglishGrammar);
-    teacherList.add(EnglishSpeaking);
+    teacherList.add(Teacher1);
+    teacherList.add(Teacher2);
+    teacherList.add(Teacher3);
 
     Student student1 = new Student(1, "pass1", 100, 100, "S", "Alex", "David");
     Student student4 = new Student(1, "pass1", 101, 100, "S", "Alex", "David");

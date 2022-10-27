@@ -201,7 +201,10 @@ public class Teacher {
     for (Student student : studentList) {
       if (this.classNumber == student.getClassNumber()) {
         System.out
-            .println("ID:" + student.getStudentId() + " : " + student.getFirstName() + " " + student.getLastName());
+            .println(
+                "ID:" + student.getStudentId() + " : " + student.getFirstName() + " " + student.getLastName()
+                    + "\nGrade: " +
+                    student.getFinalGrade() + "(" + student.getFinalScore() + ")");
         ++count;
       }
     }
@@ -233,6 +236,7 @@ public class Teacher {
       newPassword = "pass" + newStudentId.toString();
       Student NewStudent = new Student(newStudentId, newPassword, newClassNumber, 0, "", newFirstName, newLastName);
       studentList.add(NewStudent);
+      Main.clrscr();
       System.out.println("====================Create a new Student=================\n");
       NewStudent.showMyInfo();
       System.out.println("=====Please share the information with your students=====");
@@ -255,7 +259,6 @@ public class Teacher {
         }
       }
 
-      System.out.println(regFlg);
       if (regFlg == true) {
         Student NewStudent = new Student(newStudentId, newPassword, newClassNumber, 0, "", newFirstName, newLastName);
         studentList.add(NewStudent);

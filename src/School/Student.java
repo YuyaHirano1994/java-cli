@@ -102,7 +102,7 @@ public class Student {
             break;
 
           case 'c':
-            System.out.println("Please type new password ");
+            System.out.println("Please type new password");
             String inputValue1 = input1.next();
 
             System.out.println("Confirm new password");
